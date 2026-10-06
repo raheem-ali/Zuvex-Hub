@@ -1,7 +1,6 @@
-import HomePage from "../components/Homepage";
-import { getServices, getTeam } from "@/lib/content";
+// app/page.tsx
+import { redirect } from 'next/navigation';
 
-export default async function Page() {
-  const [services, team] = await Promise.all([getServices(), getTeam()]);
-  return <HomePage services={services} team={team} />;
+export default function HomePage() {
+  redirect('/login');
 }
