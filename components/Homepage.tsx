@@ -451,31 +451,6 @@ export default function HomePage({
         </div>
       </section>
 
-      {/* ===== BLOG ===== */}
-      <section className="section" style={{ background: "var(--bg-light)" }} id="blog">
-        <div className="container">
-          <Heading eyebrow="Insights" title="From the Blog" sub="Guides, publications and updates from the Zuvex Hub community." />
-          <div className="blog-grid">
-            {blogs.map((b, i) => (
-              <div key={b.title} className="blog-card reveal" style={delay(i)}>
-                <div className="b-img">
-                  <img src={`https://images.unsplash.com/${b.img}?q=80&w=400&auto=format&fit=crop`} alt={b.title} />
-                </div>
-                <div className="b-body">
-                  <span className="b-cat">{b.cat}</span>
-                  <h4>{b.title}</h4>
-                  <p>{b.text}</p>
-                  <span className="b-link">Read more <Arrow /></span>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className="blog-cta reveal">
-            <a href="#blog" className="btn btn-outline-dark">All Blogs</a>
-          </div>
-        </div>
-      </section>
-
       {/* ===== TESTIMONIALS ===== */}
       <section className="section testi-section" id="testimonials">
         <div className="container">
